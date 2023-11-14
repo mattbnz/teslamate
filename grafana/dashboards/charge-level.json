@@ -45,7 +45,7 @@
   "panels": [
     {
       "collapsed": false,
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -59,7 +59,7 @@
       "type": "row"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -146,7 +146,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "hide": false,
@@ -192,7 +192,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 2,
         "includeAll": true,
@@ -216,7 +216,7 @@
           "text": "http://localhost:4000",
           "value": "http://localhost:4000"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -233,6 +233,22 @@
         "tagsQuery": "",
         "type": "query",
         "useTags": false
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
       }
     ]
   },

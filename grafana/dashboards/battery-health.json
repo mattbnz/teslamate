@@ -95,7 +95,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "**Usable (now)** is the estimated current battery capacity. It is calculated based on the last 5 long charging sessions to have a better estimation.\n\nIf you see just '1.0 kWh' here, it means that you need at least a long charge session.\n\n**Usable (new)** is the estimated Battery Capacity since you begun to use Teslamate. That's why, the more data you have logged from your brand new car the better. For those who have not used Teslamate since they got their new car, or for those who have bought it second hand,  it's possible to set the max range to 100% and the battery capacity of the car battery when it was new in order to get a better and accurate estimation.",
       "fieldConfig": {
@@ -152,7 +152,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -188,7 +188,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -297,7 +297,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -333,7 +333,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -380,7 +380,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -413,7 +413,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -450,7 +450,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "Estimated charging cycles are based on the whole energy added to the battery. So, the more data you logged the better. ",
       "fieldConfig": {
@@ -514,7 +514,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -546,7 +546,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -583,7 +583,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "This dashboard is meant to have a look of the Battery health based on the data logged in Teslamate. So, the more data you have logged from your brand new car the better.\n\n**Degradation** is just an estimated value to have a reference, measured on **usable battery level** of every charging session with enough kWh added (in order to avoid dirty data form the sample), calculated according to the rated efficiency of the car.",
       "fieldConfig": {
@@ -642,7 +642,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -678,7 +678,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -737,7 +737,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -773,7 +773,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -820,7 +820,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -856,7 +856,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -944,7 +944,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "time_series",
           "group": [],
@@ -980,7 +980,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1043,7 +1043,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -1097,7 +1097,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -1160,7 +1160,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -1214,7 +1214,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "TeslaMate"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 8,
@@ -1345,7 +1345,7 @@
           "alias": "",
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -1377,7 +1377,7 @@
           "alias": "",
           "datasource": {
             "type": "postgres",
-            "uid": "TeslaMate"
+            "uid": "${datasource}"
           },
           "format": "table",
           "group": [],
@@ -1425,7 +1425,7 @@
         "current": {},
         "datasource": {
           "type": "postgres",
-          "uid": "TeslaMate"
+          "uid": "${datasource}"
         },
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 0,
@@ -1448,7 +1448,7 @@
         "current": {},
         "datasource": {
           "type": "postgres",
-          "uid": "TeslaMate"
+          "uid": "${datasource}"
         },
         "definition": "select unit_of_length from settings limit 1;",
         "hide": 2,
@@ -1471,7 +1471,7 @@
         "current": {},
         "datasource": {
           "type": "postgres",
-          "uid": "TeslaMate"
+          "uid": "${datasource}"
         },
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
@@ -1494,7 +1494,7 @@
         "current": {},
         "datasource": {
           "type": "postgres",
-          "uid": "TeslaMate"
+          "uid": "${datasource}"
         },
         "definition": "-- CONCATENATED JOIN QUERIES TO IMPROVE PERFORMANCE\n-- The following query is the result of many tests and hours of work. This panel is for your own personal use. \n-- If you think you can improve it and contribute, please create a pull request and do not take it to your repository, \n-- much less upload it to another repository as if the original idea were yours, nor do you share it on social media\n-- without mentioning the author. Respect the ingenuity and work of others. Cheers!\n-- 2023-07-21\n-- By @jheredianet - Twitter: @juanheredia",
         "hide": 2,
@@ -1550,6 +1550,22 @@
         "query": "0",
         "skipUrlSync": false,
         "type": "textbox"
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
       }
     ]
   },

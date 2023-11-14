@@ -44,7 +44,7 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -350,7 +350,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "hide": false,
@@ -382,7 +382,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "decimals": 1,
@@ -468,7 +468,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "decimals": 2,
@@ -560,7 +560,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -652,7 +652,7 @@
     },
     {
       "autoZoom": true,
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "defaultLayer": "OpenStreetMap",
       "gridPos": {
         "h": 15,
@@ -670,7 +670,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "metricColumn": "none",
@@ -698,7 +698,7 @@
         },
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "hide": false,
@@ -729,7 +729,7 @@
       "type": "pr0ps-trackmap-panel"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "gridPos": {
         "h": 19,
         "w": 24,
@@ -858,7 +858,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "table",
           "group": [],
           "hide": false,
@@ -886,7 +886,7 @@
           ]
         },
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "table",
           "group": [],
           "hide": false,
@@ -953,7 +953,7 @@
           "text": "C",
           "value": "C"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_temperature from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -977,7 +977,7 @@
           "text": "1",
           "value": "1"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 0,
         "includeAll": false,
@@ -1001,7 +1001,7 @@
           "text": "km",
           "value": "km"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_length from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1024,7 +1024,7 @@
           "text": "ideal",
           "value": "ideal"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select preferred_range from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1047,7 +1047,7 @@
           "text": "http://localhost:4000",
           "value": "http://localhost:4000"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1063,7 +1063,24 @@
         "tagsQuery": "",
         "type": "query",
         "useTags": false
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
       }
+     
     ]
   },
   "time": {

@@ -47,7 +47,7 @@
   "panels": [
     {
       "collapsed": false,
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -61,7 +61,7 @@
       "type": "row"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -148,7 +148,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -226,7 +226,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -303,7 +303,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -388,7 +388,7 @@
       "pluginVersion": "8.5.4",
       "targets": [
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "metricColumn": "none",
@@ -421,7 +421,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
@@ -535,7 +535,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -632,7 +632,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -729,7 +729,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -828,7 +828,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
@@ -938,7 +938,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1114,7 +1114,7 @@
       "pluginVersion": "8.5.4",
       "targets": [
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "metricColumn": "none",
@@ -1176,7 +1176,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1253,7 +1253,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1330,7 +1330,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1407,7 +1407,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1555,7 +1555,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 2,
         "includeAll": true,
@@ -1579,7 +1579,7 @@
           "text": "km",
           "value": "km"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_length from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1602,7 +1602,7 @@
           "text": "C",
           "value": "C"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_temperature from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1625,7 +1625,7 @@
           "text": "ideal",
           "value": "ideal"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select preferred_range from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1649,7 +1649,7 @@
           "text": "http://localhost:4000",
           "value": "http://localhost:4000"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1666,7 +1666,23 @@
         "tagsQuery": "",
         "type": "query",
         "useTags": false
-      }
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }      
     ]
   },
   "time": {

@@ -44,7 +44,7 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -124,7 +124,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -204,7 +204,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -284,7 +284,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -364,7 +364,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -441,7 +441,7 @@
       "type": "bargauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -520,7 +520,7 @@
       "type": "bargauge"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -648,7 +648,7 @@
       "type": "table"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -898,7 +898,7 @@
       "type": "table"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1070,7 +1070,7 @@
             "$__all"
           ]
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 2,
         "includeAll": true,
@@ -1094,7 +1094,7 @@
           "text": "http://localhost:4000",
           "value": "http://localhost:4000"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1131,6 +1131,22 @@
         "query": "",
         "skipUrlSync": false,
         "type": "textbox"
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"	
       }
     ]
   },

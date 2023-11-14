@@ -53,7 +53,7 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -338,7 +338,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "hide": false,
@@ -372,7 +372,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -484,7 +484,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -571,7 +571,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "decimals": 2,
@@ -657,7 +657,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "displayName": "Consumption",
@@ -764,7 +764,7 @@
     },
     {
       "autoZoom": true,
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "defaultLayer": "OpenStreetMap",
       "gridPos": {
         "h": 27,
@@ -782,7 +782,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [
             {
@@ -853,7 +853,7 @@
         },
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [
             {
@@ -927,7 +927,7 @@
       "type": "pr0ps-trackmap-panel"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1138,7 +1138,7 @@
       "targets": [
         {
           "alias": "",
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "hide": false,
@@ -1172,7 +1172,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1291,7 +1291,7 @@
       "pluginVersion": "8.5.4",
       "targets": [
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "metricColumn": "none",
@@ -1324,7 +1324,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1551,7 +1551,7 @@
       "pluginVersion": "8.5.4",
       "targets": [
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "time_series",
           "group": [],
           "metricColumn": "none",
@@ -1584,7 +1584,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "mappings": [
@@ -1669,7 +1669,7 @@
       "type": "stat"
     },
     {
-      "datasource": "TeslaMate",
+      "datasource": "${datasource}",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1713,7 +1713,7 @@
       "pluginVersion": "8.5.6",
       "targets": [
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "table",
           "group": [],
           "metricColumn": "none",
@@ -1742,7 +1742,7 @@
           ]
         },
         {
-          "datasource": "TeslaMate",
+          "datasource": "${datasource}",
           "format": "table",
           "group": [],
           "hide": false,
@@ -1807,7 +1807,7 @@
           "text": "C",
           "value": "C"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_temperature from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1831,7 +1831,7 @@
           "text": "km",
           "value": "km"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_length from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1855,7 +1855,7 @@
           "text": "1",
           "value": "1"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
         "hide": 0,
         "includeAll": false,
@@ -1879,7 +1879,7 @@
           "text": "m",
           "value": "m"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select case when unit_of_length = 'km' then 'm' when unit_of_length = 'mi' then 'ft' end  from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1903,7 +1903,7 @@
           "text": "ideal",
           "value": "ideal"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select preferred_range from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1926,7 +1926,7 @@
           "text": "",
           "value": ""
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1950,7 +1950,7 @@
           "text": "bar",
           "value": "bar"
         },
-        "datasource": "TeslaMate",
+        "datasource": "${datasource}",
         "definition": "select unit_of_pressure from settings limit 1;",
         "hide": 2,
         "includeAll": false,
@@ -1963,6 +1963,22 @@
         "skipUrlSync": false,
         "sort": 0,
         "type": "query"
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 1,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "postgres",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
       }
     ]
   },
